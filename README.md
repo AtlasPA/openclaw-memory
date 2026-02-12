@@ -19,6 +19,8 @@ OpenClaw users are experiencing:
 
 **Persistent memory with semantic search that works across all sessions.**
 
+> 💡 **Want all 5 infrastructure tools in one command?** Check out the [OpenClaw Infrastructure Suite](https://github.com/AtlasPA/openclaw-infrastructure) - installs and manages Memory System + 4 other tools (Cost Governor, Context Optimizer, Smart Router, Rate Limit Manager) with unified dashboard and analytics.
+
 ## Features
 
 - ✅ **Persistent Memory** - Never repeat context again
