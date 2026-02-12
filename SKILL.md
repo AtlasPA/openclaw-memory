@@ -2,7 +2,7 @@
 name: openclaw-memory
 description: Persistent memory across sessions with semantic search - remember facts, preferences, and context forever
 user-invocable: true
-metadata: {"openclaw":{"emoji":"🧠","requires":{"bins":["node"]},"os":["darwin","linux","win32"]}}
+metadata: {"openclaw":{"emoji":"🧠","requires":{"bins":["node"],"configPaths":["~/.openclaw/openclaw-memory"]},"os":["darwin","linux","win32"]}}
 ---
 
 # OpenClaw Memory System
@@ -84,12 +84,39 @@ Agents can autonomously evaluate if Pro tier is worth it:
 
 See [AGENT-PAYMENTS.md](AGENT-PAYMENTS.md) for x402 integration details.
 
-## Privacy
+## Privacy & Security
 
+**Data Storage:**
 - All data stored locally in `~/.openclaw/openclaw-memory/`
+- SQLite database contains: memories (facts, preferences, context), vector embeddings, timestamps, tags
+- **IMPORTANT**: This skill DOES store actual memory content - facts, preferences, and context you want remembered
+- Dashboard binds to localhost only (127.0.0.1) - not exposed to network
 - No external servers or telemetry
-- Embeddings can use local models (no API calls)
-- Open source - audit the code yourself
+
+**Data Retention:**
+- Free tier: 100 memories maximum, 7-day retention
+- Pro tier: Unlimited memories, permanent retention
+- You can delete specific memories or all data: `rm -rf ~/.openclaw/openclaw-memory/`
+- Individual memories can be deleted via CLI or dashboard
+
+**Payment Security:**
+- x402 payments require explicit user authorization via platform wallet
+- No private keys or credentials are stored by this skill
+- Payment subscriptions can be cancelled anytime
+- **IMPORTANT**: Review and approve any payment transactions before confirming
+- Skill does NOT have autonomous access to your wallet - payments require user consent
+
+**What This Skill Stores:**
+- Memory content: facts, preferences, patterns, conversation snippets
+- Embeddings: vector representations for semantic search
+- Metadata: tags, timestamps, importance scores
+- **Privacy consideration**: Sensitive information you share will be stored locally - audit what gets saved
+
+**Audit & Trust:**
+- Open source - audit the code yourself at https://github.com/AtlasPA/openclaw-memory
+- Embeddings can use local models (no API calls) or your configured provider
+- Hooks are transparent: session:start, session:end, provider:after
+- You control what gets stored - review and delete memories anytime
 
 ## Dashboard
 
