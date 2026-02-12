@@ -19,7 +19,7 @@ OpenClaw users are experiencing:
 
 **Persistent memory with semantic search that works across all sessions.**
 
-> 💡 **Want all 5 infrastructure tools in one command?** Check out the [OpenClaw Infrastructure Suite](https://github.com/AtlasPA/openclaw-infrastructure) - installs and manages Memory System + 4 other tools (Cost Governor, Context Optimizer, Smart Router, Rate Limit Manager) with unified dashboard and analytics.
+> 💡 **Want all 5 infrastructure tools in one command?** Check out the [OpenClaw Infrastructure Suite](https://github.com/AtlasPA/openclaw-infrastructure) - installs and manages Memory System + 4 other tools (Cost Governor, Context Optimizer, Smart Router, API Quota Tracker) with unified dashboard and analytics.
 
 ## Features
 
@@ -51,7 +51,7 @@ OpenClaw users are experiencing:
 **Memory System is the foundation for:**
 - **Context Optimizer** (compresses context using memory)
 - **Smart Router** (learns routing patterns)
-- **Rate Limit Manager** (tracks usage patterns)
+- **API Quota Tracker** (tracks usage patterns)
 
 Economic rationale: If persistent memory saves your agent >0.5 USDT/month in reduced tokens, it pays for itself. No human approval needed.
 
@@ -413,7 +413,7 @@ Memory System is the foundation for upcoming OpenClaw tools:
 
 1. **Context Optimizer** - Uses memories to compress context (saves tokens)
 2. **Smart Router** - Learns routing patterns from memory
-3. **Rate Limit Manager** - Tracks usage patterns via memory
+3. **API Quota Tracker** - Tracks usage patterns via memory
 
 Install Memory System now to prepare for the full suite.
 

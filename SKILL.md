@@ -103,7 +103,7 @@ Access web UI at `http://localhost:9091`:
 Memory System is the foundation for:
 - **Context Optimizer** - Uses memories to compress context
 - **Smart Router** - Learns routing patterns
-- **Rate Limit Manager** - Tracks usage patterns
+- **API Quota Tracker** - Tracks usage patterns
 
 ## Requirements
 
