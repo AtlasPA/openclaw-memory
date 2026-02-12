@@ -1,5 +1,6 @@
 ---
 name: openclaw-memory
+description: Persistent memory across sessions with semantic search - remember facts, preferences, and context forever
 user-invocable: true
 metadata: {"openclaw":{"emoji":"🧠","requires":{"bins":["node"]},"os":["darwin","linux","win32"]}}
 ---
